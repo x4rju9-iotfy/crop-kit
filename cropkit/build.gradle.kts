@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.tanishranjan.cropkit"
     compileSdk = 35
-    version = "1.1.1"
+    version = "1.1.2"
 
     defaultConfig {
         minSdk = 21
