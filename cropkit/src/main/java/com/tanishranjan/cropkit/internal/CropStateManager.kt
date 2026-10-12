@@ -182,7 +182,8 @@ internal class CropStateManager(
             dragAmount = adjustedDragAmount,
             imageRect = state.value.imageRect,
             cropRect = state.value.cropRect,
-            minCropSize = MIN_CROP_SIZE
+            minCropSize = MIN_CROP_SIZE,
+            lockAspectRatio = cropShape !is CropShape.FreeForm
         )?.let { newRect ->
             _state.update {
                 it.copy(
